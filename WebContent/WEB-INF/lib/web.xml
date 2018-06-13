@@ -1,0 +1,26 @@
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+    version="2.4">
+
+  <display-name>Servlets ejemplo</display-name>
+  <description>
+     Servlets de ejemplo para practicar
+  </description>
+
+<!-- Publicamos nuestro servlet aqui -->
+
+	<servlet>
+        <servlet-name>Listar</servlet-name>
+        <servlet-class>servlets.Listar</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Listar</servlet-name>
+        <url-pattern>/Listar</url-pattern>
+    </servlet-mapping>
+    
+    
+    
+<!-- Fin de la publicacion de servlets -->
+
+</web-app>
